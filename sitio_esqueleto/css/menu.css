@@ -1,0 +1,26 @@
+.menu-hori{
+    width: 100%;
+    border: 3px solid rgb(184, 184, 184);
+    background-color: rgb(184, 184, 184);
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    height: 3%;
+}
+.menu-hori > a{
+    padding-left: 25px;
+    padding-right: 25px;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+a:hover{
+    background-color: paleturquoise;
+}
+a:active{
+    background: paleturquoise;
+}
+a:visited{
+    color: black;
+}

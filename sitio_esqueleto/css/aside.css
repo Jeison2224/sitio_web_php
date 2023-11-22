@@ -1,0 +1,13 @@
+aside{
+    float: right;
+    background-color: gray;
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+
+}
+.imgaside{
+    width: 50%;
+    padding-left: 75px;
+    padding-top: 50px;
+}

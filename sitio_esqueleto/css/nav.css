@@ -1,0 +1,29 @@
+#menu{
+    text-align: center;
+    align-items: center;
+}
+.menu-verti{
+    width: 20%;
+    background-color: gray;
+    font-size: larger;
+    text-align: left;
+    height: 100%;
+    float: left;
+}
+.menu-verti > a{
+    padding-right: 25px;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-top: 25px;
+}
+a:hover{
+    background-color: paleturquoise;
+}
+a:active{
+    background: paleturquoise;
+}
+a:visited{
+    color: black;
+}
