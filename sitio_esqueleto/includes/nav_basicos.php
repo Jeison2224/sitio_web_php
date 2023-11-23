@@ -1,7 +1,7 @@
 <nav class="menu-verti">
 	<h2 id="menu">Menu</h2>
-    <a href="form1.php">Test php</a>
-	<a href="">Conversor €</a>
-	<a href="">cambio divisas</a>
+    <a href="1.php">Test php</a>
+	<a href="2.php">Conversor €</a>
+	<a href="3.php">cambio divisas</a>
 
 </nav>

@@ -7,13 +7,11 @@
     <?php
         include "../includes/header2.php";
         include "../includes/menu2.php";
-        include "../includes/nav_basicos.php";
+        include "../includes/nav_arrays.php";
     ?>
     <main>
-        <h2 class="h2main">Portada de inicio</h2>
-        <p class="pmain"></p>
-        <h2 class="h2main">Caracteristicas del sitio web</h2>
-        <p class="pmain"></p>
+        <h2 class="h2main">Zona de ejercicios con arrays</h2>
+        <p class="pmain">Aqui se pueden consultar desde el menú de navegacion algunos de los ejercicios realizados en el módulo sobre programación de estructura de datos</p>
     </main>
     <?php
         include "../includes/aside2.php";
