@@ -11,9 +11,9 @@
     ?>
     <main>
         <h2 class="h2main">Portada de inicio</h2>
-        <p class="pmain"></p>
+        <p class="pmain">Este sitio web contine ejemplos representativos de los conocimientos adquiridos en el módulo Desarrollo Web en Entornos Servidor en 2ª curos del ciclo Formación de Grado Superior Desarrollo de Aplicaciones Web.</p>
         <h2 class="h2main">Caracteristicas del sitio web</h2>
-        <p class="pmain"></p>
+        <p class="pmain">El sitio web dispone de un menú de cabecera para moverse por las distintas secciones y menús de navegacion en el margen para vincular los ejercicios de cada una de las secciones.</p>
     </main>
     <?php
         include "includes/aside.php";
