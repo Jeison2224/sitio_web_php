@@ -14,11 +14,38 @@
         <h2>LOGIN PARA USUARIOS REGISTRADOS</h2>
         <?php
             if($_REQUEST){
+
+                require("conectadb.php");
+
                 $usuario = $_GET["usuario"];
                 $contraseña = $_GET["contraseña"];
 
-                if () {
+                $sql = "SELECT * from usuarios where nombre ='$usuario'";
 
+                if($resultado = $cone->query($sql)){
+                    while($row = $resultado->fetch_array()){
+                        $userok = $row["nombre"];
+                        $contraok = $row["clave"];
+                    }
+                    $resultado->close();
+                }
+                $cone->close();
+
+                if(isset($usuario) && isset($contraseña)){
+                    if($usuario == $userok){
+                        if (password_verify($contraseña, $contraok)) {
+                            $_SESSION["logueado"] = true;
+                            session_start();
+                            $_SESSION['login_id'] = 1;
+                            header("Location: index.php");
+                        }
+                        else {
+                            echo "Contraseña incorrecta. Vuleve a <a href='login.php'>introducir</a> tus datos.";
+                        }
+                    }
+                    else {
+                        echo "Usuario no registrado en la base de datos, Registrarse <a href='register.php'>aqui.</a>";
+                    }
                 }
             }
             else {
@@ -27,7 +54,7 @@
                     <label for="usuario">Usuario</label>
                     <input type="text" id="usuario" name="usuario"><br>
                     <label for="contraseña">Contraseña</label>
-                    <input type="text" id="contraseña" name="contraseña"><br>
+                    <input type="password" id="contraseña" name="contraseña"><br>
                     <input type="submit" value="Conectar">
                 </form>
             <?php
@@ -37,20 +64,6 @@
     <?php
         include "../includes/aside2.php";
         include "../includes/footer2.php";
-
-        function obtenerUsuario(){
-                $cone = mysqli_connect   ("localhost", "jardinero", "jardinero")
-                    or die ("no se pudo conectar");
-
-                mysqli_select_db ($cone, "jardineria")
-                    or die ("no se pudo seleccionar la bbdd");
-
-                $sql = "SELECT * from usuarios where nombre = '$usuario'";
-                $resultado = mysqli_query($cone, $sql)
-                or die ("Fallo en la consulta");
-
-                return $resultado;
-        }
     ?>
 </body>
 </html>
