@@ -10,11 +10,28 @@
         include "../includes/menu2.php";
         include "../includes/nav_bbdd.php";
         include("conectadb.php");
+        if(isset($_POST['logout'])) {
+            session_destroy();
+            header("Location: 9.php");
+        }
     ?>
     <main>
 		<div>
             <h2 class="h2main">Importe pedidos</h2>
             <a href="../bdjardineria/index.php">Inicio: BBDD</a>
+            <div id="loggin">
+                <?php
+                if(isset($_SESSION['login_id'])){
+                    ?>
+                    <p>Usuario: <?php echo $_SESSION['usuario'] ?></p>
+                    <form action="" method="post">
+                        <input type="hidden" name="logout" value="true" />
+                        <button>Cerrar sesion</button>
+                    </form>
+                    <?php
+                }
+                ?>
+            </div>
 			<?php
                 if(isset($_SESSION['login_id'])) {
                     //Versión con importes

@@ -10,4 +10,5 @@ main{
 }
 .h2main, .pmain{
     text-align:center;
+    align-items: center;
 }
