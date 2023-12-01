@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-    session_id();
     session_start();
     include "../includes/metadata2.php"
 ?>
@@ -17,7 +16,7 @@
             <h2 class="h2main">Lista clientes</h2>
             <a href="../bdjardineria/index.php">Inicio: BBDD</a>
 			<?php
-                if($_SESSION['login_id'] == 1) {
+                if(isset($_SESSION['login_id'])) {
 
 
                     $consulta = "SELECT * from clientes";
@@ -46,7 +45,6 @@
                     } else {
                         print("No hay noticias disponibles");
                     }
-
                     mysqli_close($cone);
                 }
                 else {
