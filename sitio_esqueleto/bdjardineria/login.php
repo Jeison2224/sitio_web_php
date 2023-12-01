@@ -34,9 +34,8 @@
                 if(isset($usuario) && isset($contraseña)){
                     if($usuario == $userok){
                         if (password_verify($contraseña, $contraok)) {
-                            $_SESSION["logueado"] = true;
-                            session_start();
-                            $_SESSION['login_id'] = 1;
+                            $_SESSION['log'] = true;
+                            $_SESSION['usuario'] = $usuario;
                             header("Location: index.php");
                         }
                         else {
