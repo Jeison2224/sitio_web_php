@@ -12,7 +12,7 @@
     <main>
 		<div>
             <h2 class="h2main">Palindromos</h2>
-            <a href="../arrays/index.php">Inicio: arrays</a>
+            <a class="links" href="../arrays/index.php">Inicio: arrays</a>
 			<?php
                 function PALINDROMO($str){
 

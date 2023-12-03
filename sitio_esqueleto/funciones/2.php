@@ -12,7 +12,7 @@
     <main>
 		<div>
             <h2 class="h2main">Cambio divisas</h2>
-            <a href="../funciones/index.php">Inicio: funciones</a>
+            <a class="links" href="../funciones/index.php">Inicio: funciones</a>
 			<?php
                 function conversordemonedas($euros, $divisa) //El parámetro $divisa significa la divisa destino, de la siguiente forma: 0 serán dolares y 1 serán libras
                 {

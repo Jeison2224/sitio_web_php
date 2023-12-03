@@ -12,7 +12,7 @@
     <main>
 		<div>
             <h2 class="h2main">Funciones arrays</h2>
-            <a href="../arrays/index.php">Inicio: arrays</a>
+            <a class="links" href="../arrays/index.php">Inicio: arrays</a>
 			<?php
                 $enteros = range(1, 10);
 

@@ -18,7 +18,7 @@
     <main>
 		<div>
             <h2 class="h2main">Borrar clientes</h2>
-            <a href="../bdjardineria/index.php">Inicio: BBDD</a>
+            <a class="links" href="../bdjardineria/index.php">Inicio: BBDD</a>
             <div id="loggin">
                 <?php
                 if(isset($_SESSION['login_id'])){
@@ -64,6 +64,7 @@
                     <?php
                     //Funciones auxiliares
                     function mostrarClienteyPreguntarBorrar($tel) {
+                        include("conectadb.php");
                         if(!empty($tel)){
                             $consulta = mysqli_query($cone,"SELECT * FROM clientes WHERE telefono='$tel';")
                                 or die ("Error al seleccionar cliente");
@@ -93,6 +94,7 @@
                     }
 
                     function borrarCliente($codigo,$respuesta) {
+                        include("conectadb.php");
                         echo "<p>RESULTADOS DE BORRADO DE CLIENTE DE CÓDIGO $codigo.</p>";
 
                         if($respuesta=="Si"){

@@ -12,7 +12,7 @@
     <main>
 		<div>
             <h2 class="h2main">Ordenacion</h2>
-            <a href="../arrays/index.php">Inicio: arrays</a>
+            <a class="links" href="../arrays/index.php">Inicio: arrays</a>
 			<?php
                 // Función para mostrar los datos del array tal como se reciben
                 function mostrarArrayComoTabla($array) {

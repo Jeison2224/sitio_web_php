@@ -12,7 +12,7 @@
     <main>
 		<div>
             <h2 class="h2main">Tablas HTML</h2>
-            <a href="../funciones/index.php">Inicio: funciones</a>
+            <a class="links" href="../funciones/index.php">Inicio: funciones</a>
 			<?php
                 function tabla($filas, $columnas){
                     // Crear una tabla HTML

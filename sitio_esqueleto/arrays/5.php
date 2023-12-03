@@ -12,7 +12,7 @@
     <main>
 		<div>
             <h2 class="h2main">Funciones strings</h2>
-            <a href="../arrays/index.php">Inicio: arrays</a><br><br>
+            <a class="links" href="../arrays/index.php">Inicio: arrays</a><br><br>
 			<?php
                 $words = ["gato", "perro", "elefante", "jirafa", "tortuga", "leon", "tigre", "loro", "canguro", "pinguino"];
 

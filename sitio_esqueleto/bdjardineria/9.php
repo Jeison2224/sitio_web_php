@@ -18,7 +18,7 @@
     <main>
 		<div>
             <h2 class="h2main">Importe pedidos</h2>
-            <a href="../bdjardineria/index.php">Inicio: BBDD</a>
+            <a class="links" href="../bdjardineria/index.php">Inicio: BBDD</a>
             <div id="loggin">
                 <?php
                 if(isset($_SESSION['login_id'])){
@@ -73,7 +73,7 @@
                                 //Obtenemos todos los detallepedidos y nombres de productos del pedido de código $filapedido[0]
                                 // y los devolvemos en forma de tabla HTML
                                 $sql2="SELECT Nombre,PrecioUnidad,Cantidad FROM detallepedidos NATURAL JOIN productos WHERE detallepedidos.CodigoPedido=$filapedido[0]";
-                                $resulconsultadetallespedido=mysqli_query ($conexion,$sql2) or die ("Fallo en la consulta de detallepedidos y productos");
+                                $resulconsultadetallespedido=mysqli_query ($cone,$sql2) or die ("Fallo en la consulta de detallepedidos y productos");
                                 $ndetalles = mysqli_num_rows ($resulconsultadetallespedido);
 
                                 if ($ndetalles == 0) {

@@ -18,7 +18,7 @@
     <main>
 		<div>
             <h2 class="h2main">Lista clientes</h2>
-            <a href="../bdjardineria/index.php">Inicio: BBDD</a><br>
+            <a class="links" href="../bdjardineria/index.php">Inicio: BBDD</a><br>
             <div id="loggin">
                 <?php
                 if(isset($_SESSION['login_id'])){

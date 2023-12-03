@@ -21,7 +21,7 @@
 			<?php
 			if($_REQUEST) {
 				?>
-				<a href="../basicos/index.php">Inicio: basicos</a>
+				<a class="links" href="../basicos/index.php">Inicio: basicos</a>
         		<div>
 					<?php
                         $cambioDolar=$_GET['cambioDolar'];

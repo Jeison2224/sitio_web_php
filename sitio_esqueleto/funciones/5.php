@@ -12,7 +12,7 @@
     <main>
 		<div>
             <h2 class="h2main">Circulo</h2>
-            <a href="../funciones/index.php">Inicio: funciones</a>
+            <a class="links" href="../funciones/index.php">Inicio: funciones</a>
 			<?php
                 define("PI", 3.141592);       //También se puede definir una variable constante (const PI=3.141592) o simplemente usar pi() o M_PI, ya definidas en PHP
                 function circulo($r, &$l, &$a)  //Paso por referencia de los parámetros $l y $a, referentes a la longitud y al área

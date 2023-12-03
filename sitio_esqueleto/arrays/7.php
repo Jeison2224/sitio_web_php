@@ -12,7 +12,7 @@
     <main>
 		<div>
             <h2 class="h2main">Matrices</h2>
-            <a href="../arrays/index.php">Inicio: arrays</a>
+            <a class="links" href="../arrays/index.php">Inicio: arrays</a>
 			<?php
                 if($_REQUEST) {     //Si no hay nada almacenado en el array REQUEST pasa al final del código donde se muestra el formulario inicial
 
